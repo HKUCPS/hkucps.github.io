@@ -1,12 +1,12 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17228741.svg)](https://doi.org/10.5281/zenodo.17228741)
 
-<h1 align="center">Lab Website Template</h1>
+<h1 align="center">HKU Cyber-Physical Systems Lab</h1>
 <p align="center">
-<img height="200" src="https://raw.githubusercontent.com/greenelab/lab-website-template/main/images/share.jpg?raw=true" alt="Lab Website Template">
+<img height="200" src="https://raw.githubusercontent.com/greenelab/lab-website-template/main/images/share.jpg?raw=true" alt="HKU CPS Lab">
 </p>
 
-Lab Website Template (LWT) is an easy-to-use, flexible website template for labs.
-Spend less time worrying about managing a website and citations, and more time running your lab.
+Welcome to the HKU Cyber-Physical Systems Lab website!
+This site is built using the Lab Website Template - an easy-to-use, flexible website template for research labs.
 
 👇👇 **Get Started** 👇👇
 

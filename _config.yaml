@@ -1,9 +1,9 @@
 # site properties and page defaults
-title: Lab Website Template
-subtitle: by the Greene Lab
-description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
-header: images/background.jpg
-footer: images/background.jpg
+title: HKU CPS LAB
+subtitle: JC STEM Lab of Smart Cyber-Physical Industrial Systems
+description: We explore deep integration and interaction between cyber systems and physical systems to tackle practical challenges.
+header: images/background_cps.jpeg
+footer: images/background_cps.jpeg
 proofer: false
 
 # site social media and other links

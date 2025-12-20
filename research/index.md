@@ -2,26 +2,25 @@
 title: Research
 nav:
   order: 1
-  tooltip: Published works
+  tooltip: Research areas and publications
 ---
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
 {% include section.html %}
 
-## Highlighted
+## 🚧 Under Construction 🚧
 
-{% include citation.html lookup="Open collaborative writing with Manubot" style="rich" %}
+This page is currently being updated with information about our research areas and publications. Please check back soon!
 
-{% include section.html %}
+---
 
-## All
+**Coming Soon:**
+- Research Areas & Focus
+- Featured Publications
+- Conference Papers
+- Journal Articles
+- Technical Reports
+- Collaborations
 
-{% include search-box.html %}
-
-{% include search-info.html %}
-
-{% include list.html data="citations" component="citation" style="rich" %}
+For inquiries about our research, please contact us at: **hkucpslab@gmail.com**

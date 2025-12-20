@@ -1,22 +1,12 @@
 ---
 ---
 
-# Lab Website Template
+Welcome to JC STEM Lab of Smart Cyber-Physical Industrial Systems at The University of Hong Kong! Our research explores deep integration and interaction between cyber systems and physical systems to tackle practical challenges, leveraging the state-of-the-art robotic systems such as humanoid, quadruped robots, robotic arms, hexapods, and automated vehicles. Highly motivated students interested in our research are encouraged to contact us. See our [projects](/projects/) and [research](/research/) for more details. Please visit our [contact](/contact/) page to get in touch.
 
-[Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/).
-Spend less time worrying about managing a website and citations, and more time running your lab.
-
-{%
-  include button.html
-  type="docs"
-  link="https://greene-lab.gitbook.io/lab-website-template-docs"
-%}
-{%
-  include button.html
-  type="github"
-  text="On GitHub"
-  link="greenelab/lab-website-template"
-%}
+<div style="text-align: center; margin: 2em 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+  <img src="images/lab_license.jpg" alt="Lab License" style="width: 400px; max-width: 45%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="images/lab_license2.jpg" alt="Lab License 2" style="width: 400px; max-width: 45%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+</div>
 
 {% include section.html %}
 
@@ -24,12 +14,12 @@ Spend less time worrying about managing a website and citations, and more time r
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Our research focuses on cyber-physical systems and robotics. We work on cutting-edge technologies to bridge the gap between digital computation and physical processes.
 
 {%
   include button.html
   link="research"
-  text="See our publications"
+  text="See our research areas"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -39,7 +29,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/research_logo.jpg"
   link="research"
   title="Our Research"
   text=text
@@ -47,7 +37,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We develop innovative solutions in robotics and automation. Our projects leverage advanced robotic platforms to solve real-world challenges in industrial environments.
 
 {%
   include button.html
@@ -62,7 +52,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/3go2.jpg"
   link="projects"
   title="Our Projects"
   flip=true
@@ -72,7 +62,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Our lab brings together talented researchers and students passionate about robotics and cyber-physical systems. Join us to explore the future of intelligent systems.
 
 {%
   include button.html
@@ -87,7 +77,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/team_temporary.png"
   link="team"
   title="Our Team"
   text=text

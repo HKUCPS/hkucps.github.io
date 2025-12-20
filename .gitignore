@@ -14,3 +14,4 @@ node_modules
 .bundle/
 vendor/
 *.backup
+Gemfile.lock

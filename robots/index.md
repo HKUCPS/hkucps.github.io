@@ -27,7 +27,7 @@ Explore our state-of-the-art robotic systems including humanoid robots, quadrupe
 
 {%
   include figure.html
-  image="images/B2.jpg"
+  image="images/b2.png"
   caption="Unitree B2 - Industrial Quadruped Robot with Z1 Manipulator"
 %}
 

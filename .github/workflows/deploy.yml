@@ -25,7 +25,7 @@ jobs:
       - name: Comment out html-proofer
         run: |
           sed -i 's/^gem "html-proofer"/# gem "html-proofer"/' Gemfile
-          sed -i 's/^require "html-proofer"/# require "html-proofer"/' _plugins/misc.rb
+          sed -i "s/^require 'html-proofer'/# require 'html-proofer'/" _plugins/misc.rb
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1

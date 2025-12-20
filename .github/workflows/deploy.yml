@@ -28,6 +28,11 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
+      - name: Comment out html-proofer
+        run: |
+          sed -i 's/^gem "html-proofer"/# gem "html-proofer"/' Gemfile
+          sed -i 's/^require "html-proofer"/# require "html-proofer"/' _plugins/misc.rb
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4

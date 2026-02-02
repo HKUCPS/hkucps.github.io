@@ -46,24 +46,15 @@
   }
 }
 
-@keyframes glow {
-  0%, 100% {
-    filter: drop-shadow(0 0 5px rgba(102, 126, 234, 0.3));
-  }
-  50% {
-    filter: drop-shadow(0 0 15px rgba(102, 126, 234, 0.6));
-  }
-}
-
 // Logo floating effect on home page
 body[data-loaded] header[data-big] .logo {
-  animation: float 3s ease-in-out infinite, glow 3s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
   transition: transform 0.3s ease;
   
   &:hover {
     animation-play-state: paused;
     transform: translateY(-5px) scale(1.05);
-    filter: drop-shadow(0 0 20px rgba(102, 126, 234, 0.8));
+    filter: none;
   }
 }
 

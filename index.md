@@ -1,84 +1,67 @@
 ---
 ---
 
-Welcome to JC STEM Lab of Smart Cyber-Physical Industrial Systems at The University of Hong Kong! Our research explores deep integration and interaction between cyber systems and physical systems to tackle practical challenges, leveraging the state-of-the-art robotic systems such as humanoid, quadruped robots, robotic arms, hexapods, and automated vehicles. Highly motivated students interested in our research are encouraged to contact us. See our [projects](/projects/) and [research](/research/) for more details. Please visit our [contact](/contact/) page to get in touch.
+{% include section.html %}
 
-<div style="text-align: center; margin: 2em 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-  <img src="images/lab_license.jpg" alt="Lab License" style="width: 400px; max-width: 45%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <img src="images/lab_license2.jpg" alt="Lab License 2" style="width: 400px; max-width: 45%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-</div>
+### About Our Lab
+<!-- {: style="text-align: center;"} -->
+
+Welcome to the JC STEM Lab of Smart Cyber-Physical Industrial Systems. We explore the deep integration and interaction between cyber systems and physical systems to tackle practical industrial challenges. Our laboratory combines cutting-edge robotics, artificial intelligence, and advanced control systems to develop intelligent solutions for real-world industrial applications. We specialize in creating autonomous systems that can adapt to dynamic and uncertain environments, with a focus on practical deployment and engineering excellence.
+
+Our research spans three core areas: **Cyber-Physical Systems** for intelligent integration of computation and physical processes, **Robotics** for autonomous manipulation and navigation, and **Data Analytics** for extracting insights and enabling data-driven decision making.
+
+We leverage state-of-the-art robotic platforms including:
+- Humanoid robots
+- Quadruped robots
+- Robotic arms
+- Hexapods
+- Automated vehicles
+
+Highly motivated students interested in our research are encouraged to contact us. See our [projects](/projects/) and [research](/research/) for more details.
 
 {% include section.html %}
 
-## Highlights
+{% comment %}
+### Certificate
 
-{% capture text %}
-
-Our research focuses on cyber-physical systems and robotics. We work on cutting-edge technologies to bridge the gap between digital computation and physical processes.
-
-{%
-  include button.html
-  link="research"
-  text="See our research areas"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
+{% capture highlight_left %}
+{% include figure.html image="images/lab_license.jpg" caption="HKU JC STEM Lab establishment plaque (2024)" %}
 {% endcapture %}
+
+{% capture highlight_right %}
+{% include figure.html image="images/lab_license2.jpg" caption="Lab entrance wall and identity signage" %}
+{% endcapture %}
+
+{% include cols.html col1=highlight_left col2=highlight_right %}
+
+{% endcomment %}
+
+
+## Highlights
 
 {%
   include feature.html
   image="images/research_logo.jpg"
   link="research"
-  title="Our Research"
-  text=text
+  title="Cyber-Physical Systems"
+  text="Our research focuses on cyber-physical systems and robotics. We work on cutting-edge technologies to bridge the gap between digital computation and physical processes."
 %}
-
-{% capture text %}
-
-We develop innovative solutions in robotics and automation. Our projects leverage advanced robotic platforms to solve real-world challenges in industrial environments.
-
-{%
-  include button.html
-  link="projects"
-  text="Browse our projects"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
 
 {%
   include feature.html
-  image="images/3go2.jpg"
+  image="images/franka.jpg"
   link="projects"
-  title="Our Projects"
+  title="Robotics & Automation"
+  text="We develop innovative solutions in robotics and automation. Our projects leverage advanced robotic platforms to solve real-world challenges in industrial environments."
   flip=true
-  style="bare"
-  text=text
 %}
-
-{% capture text %}
-
-Our lab brings together talented researchers and students passionate about robotics and cyber-physical systems. Join us to explore the future of intelligent systems.
-
-{%
-  include button.html
-  link="team"
-  text="Meet our team"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
 
 {%
   include feature.html
   image="images/team_temporary.png"
   link="team"
   title="Our Team"
-  text=text
+  text="Our lab brings together talented researchers and students passionate about robotics and cyber-physical systems. Join us to explore the future of intelligent systems."
 %}
+
+{% include section.html %}

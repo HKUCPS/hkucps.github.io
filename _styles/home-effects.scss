@@ -1,0 +1,195 @@
+---
+---
+
+// ===========================
+// Home Page Animations & Effects
+// ===========================
+
+// Fade-in animation for main content
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Pulse animation for highlight effect
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+// Float animation for logo
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px rgba(102, 126, 234, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(102, 126, 234, 0.6));
+  }
+}
+
+// Logo floating effect on home page
+body[data-loaded] header[data-big] .logo {
+  animation: float 3s ease-in-out infinite, glow 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    animation-play-state: paused;
+    transform: translateY(-5px) scale(1.05);
+    filter: drop-shadow(0 0 20px rgba(102, 126, 234, 0.8));
+  }
+}
+
+// Apply fade-in to first section
+body[data-loaded] main > section:first-of-type {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+// Staggered animation for subsequent sections
+body[data-loaded] main > section:nth-of-type(2) {
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+body[data-loaded] main > section:nth-of-type(3) {
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+body[data-loaded] main > section:nth-of-type(4) {
+  animation: fadeInUp 0.8s ease-out 0.6s backwards;
+}
+
+body[data-loaded] main > section:nth-of-type(5) {
+  animation: fadeInUp 0.8s ease-out 0.8s backwards;
+}
+
+// Enhanced image effects on home page
+main > section:first-of-type img {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  
+  &:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.15) !important;
+  }
+}
+
+// Feature hover effects
+.feature {
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-4px);
+    
+    img {
+      transform: scale(1.05);
+    }
+  }
+  
+  img {
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+// Button hover effects enhancement
+.button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+  }
+  
+  &:hover::before {
+    width: 300px;
+    height: 300px;
+  }
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Smooth scroll behavior
+html {
+  scroll-behavior: smooth;
+}
+
+// Heading animation on home page
+main > section:first-of-type h1,
+main > section:first-of-type h2 {
+  background: linear-gradient(135deg, var(--text) 0%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeIn 1s ease-out;
+}
+
+// Add subtle parallax effect to feature images
+@media (min-width: 800px) {
+  .feature img {
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .feature:hover img {
+    transform: scale(1.08) translateZ(0);
+  }
+}
+
+// Loading state
+body:not([data-loaded]) main {
+  opacity: 0;
+}
+
+body[data-loaded] main {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+// Dark mode specific effects
+[data-dark="true"] {
+  main > section:first-of-type img:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4) !important;
+  }
+  
+  .button:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+}

@@ -7,19 +7,60 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
 
+Explore our cutting-edge research projects leveraging state-of-the-art cyber-physical systems and advanced robotics to solve real-world industrial challenges.
+
 {% include section.html %}
 
-## 🚧 Under Construction 🚧
+## Demo Videos
 
-This page is currently being updated with information about our research projects. Please check back soon!
+{% capture video1 %}
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/M0A-o8HQ_gI" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+</div>
 
----
+<p class="video-title">Intelligent Inspection System for Unmanned Vehicles: AI as the Brain</p>
 
-**Coming Soon:**
-- Current Research Projects
-- Past Projects
-- Collaborations
-- Publications
-- Open Source Software & Datasets
+<p class="video-description">An autonomous inspection system leveraging deep learning and computer vision to enable unmanned vehicles to detect defects, anomalies, and safety hazards in industrial environments with human-level accuracy.</p>
+{% endcapture %}
 
-For inquiries about our research, please contact us at: **hkucpslab@gmail.com**
+{% capture video2 %}
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/ieOOS00xVtg" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+</div>
+
+<p class="video-title">Privacy-Aware Fall Alert</p>
+
+<p class="video-description">A privacy-preserving fall detection system using edge computing and federated learning to monitor elderly individuals while ensuring data security and personal privacy protection without compromising detection accuracy.</p>
+{% endcapture %}
+
+{% include cols.html col1=video1 col2=video2 %}
+
+{% capture video3 %}
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/3ZiANNmk7vA" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+</div>
+
+<p class="video-title">Uniting Human-Robot Intelligence for Complex Tasks in Unreliable Environments</p>
+
+<p class="video-description">A hybrid human-robot collaboration framework that combines human cognitive abilities with robotic precision to tackle complex manipulation tasks in uncertain, dynamic environments through adaptive learning and real-time coordination.</p>
+{% endcapture %}
+
+{% capture video4 %}
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/WlrFXxuyvYE" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+</div>
+
+<p class="video-title">Be the Robot: VR Head Tracking for Robot Vision</p>
+
+<p class="video-description">An immersive teleoperation system that translates natural human head movements into robot camera control through VR head tracking, enabling intuitive remote operation and enhanced situational awareness for complex robotic tasks.</p>
+{% endcapture %}
+
+{% include cols.html col1=video3 col2=video4 %}
+
+{% include section.html %}
+
+## More Projects
+
+Coming soon: Research applications, publications, and collaborations.
+
+For inquiries about our research projects, please contact us at: **hkucpslab@gmail.com**

@@ -7,14 +7,55 @@ footer {
   padding: 40px;
   line-height: var(--spacing);
   box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #0a1a3d 0%, #1a4a6d 20%, #0a5a7d 40%, #2a5aad 60%, #4a3a7d 80%, #0a1a3d 100%) !important;
+  background-size: 400% 400% !important;
+  animation: gradientShift 8s ease infinite;
+  color: #ffffff !important;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 85%;
+  height: 85%;
+  border: 2px solid rgba(180, 180, 180, 0.4);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotateX(70deg);
+  animation: orbitRotate 20s linear infinite, pulse-glow 3s ease-in-out infinite;
+  z-index: 0;
+  box-shadow: 0 0 20px rgba(200, 200, 200, 0.3), inset 0 0 20px rgba(220, 220, 220, 0.2);
+  pointer-events: none;
+}
+footer::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 65%;
+  height: 65%;
+  border: 2px solid rgba(100, 200, 150, 0.5);
+  border-top-color: rgba(120, 220, 170, 0.8);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotateX(70deg);
+  animation: orbitRotate 15s linear infinite reverse, pulse-glow 3s ease-in-out infinite 1.5s;
+  z-index: 0;
+  box-shadow: 0 0 25px rgba(100, 200, 150, 0.4), inset 0 0 25px rgba(120, 220, 170, 0.3);
+  pointer-events: none;
+}
+footer > * {
+  position: relative;
+  z-index: 1;
 }
 
 footer a {
-  color: var(--text) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 footer a:hover {
-  color: var(--primary) !important;
+  color: #ffffff !important;
 }
 
 footer .icon {

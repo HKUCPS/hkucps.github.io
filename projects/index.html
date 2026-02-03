@@ -90,7 +90,10 @@
 <!-- automatically get url from fonts used in theme file -->
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Space+Grotesk" rel="stylesheet">
+
+<!-- Michroma Font -->
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -108,6 +111,10 @@
 
   
     <link href="/_styles/-theme.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/academic-premium.css" rel="stylesheet">
   
 
   
@@ -167,6 +174,10 @@
   
 
   
+    <link href="/_styles/dynamic-background.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/feature.css" rel="stylesheet">
   
 
@@ -204,6 +215,10 @@
 
   
     <link href="/_styles/highlight.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/home-effects.css" rel="stylesheet">
   
 
   
@@ -344,6 +359,12 @@
 
   
 
+  
+
+  
+
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -363,9 +384,15 @@
 
   <script src="/_scripts/fetch-tags.js"></script>
 
+  <script src="/_scripts/home-effects.js"></script>
+
+  <script src="/_scripts/premium-interactions.js"></script>
+
   <script src="/_scripts/search.js"></script>
 
   <script src="/_scripts/site-search.js"></script>
+
+  <script src="/_scripts/starry-space.js"></script>
 
   <script src="/_scripts/table-wrap.js"></script>
 
@@ -428,12 +455,6 @@
       
     
       
-        <a href="/robots/" data-tooltip="Our robotic platforms and equipment">
-          Robots
-        </a>
-      
-    
-      
         <a href="/contact/" data-tooltip="Email, address, and location">
           Contact
         </a>
@@ -483,24 +504,70 @@
   
     
     <div>
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/M0A-o8HQ_gI" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+<div class="video-container" data-video-id="M0A-o8HQ_gI">
+  <img src="https://img.youtube.com/vi/M0A-o8HQ_gI/maxresdefault.jpg" alt="Intelligent Inspection System for Unmanned Vehicles: AI as the Brain" loading="lazy" class="video-thumbnail">
+  <button class="video-play-button" aria-label="Play video">
+    <svg viewbox="0 0 68 48" width="68" height="48">
+      <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
+      <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+    </svg>
+  </button>
 </div>
 
 <p class="video-title">Intelligent Inspection System for Unmanned Vehicles: AI as the Brain</p>
 
 <p class="video-description">An autonomous inspection system leveraging deep learning and computer vision to enable unmanned vehicles to detect defects, anomalies, and safety hazards in industrial environments with human-level accuracy.</p>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.video-container').forEach(function(container) {
+      container.addEventListener('click', function() {
+        var videoId = this.getAttribute('data-video-id');
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
+        iframe.setAttribute('allowfullscreen', '');
+        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+        this.innerHTML = '';
+        this.appendChild(iframe);
+      });
+    });
+  });
+</script>
+
 </div>
   
     
     <div>
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/ieOOS00xVtg" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+<div class="video-container" data-video-id="ieOOS00xVtg">
+  <img src="https://img.youtube.com/vi/ieOOS00xVtg/maxresdefault.jpg" alt="Privacy-Aware Fall Alert" loading="lazy" class="video-thumbnail">
+  <button class="video-play-button" aria-label="Play video">
+    <svg viewbox="0 0 68 48" width="68" height="48">
+      <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
+      <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+    </svg>
+  </button>
 </div>
 
 <p class="video-title">Privacy-Aware Fall Alert</p>
 
 <p class="video-description">A privacy-preserving fall detection system using edge computing and federated learning to monitor elderly individuals while ensuring data security and personal privacy protection without compromising detection accuracy.</p>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.video-container').forEach(function(container) {
+      container.addEventListener('click', function() {
+        var videoId = this.getAttribute('data-video-id');
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
+        iframe.setAttribute('allowfullscreen', '');
+        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+        this.innerHTML = '';
+        this.appendChild(iframe);
+      });
+    });
+  });
+</script>
+
 </div>
   
 </div>
@@ -509,24 +576,212 @@
   
     
     <div>
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/3ZiANNmk7vA" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+<div class="video-container" data-video-id="3ZiANNmk7vA">
+  <img src="https://img.youtube.com/vi/3ZiANNmk7vA/maxresdefault.jpg" alt="Uniting Human-Robot Intelligence for Complex Tasks in Unreliable Environments" loading="lazy" class="video-thumbnail">
+  <button class="video-play-button" aria-label="Play video">
+    <svg viewbox="0 0 68 48" width="68" height="48">
+      <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
+      <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+    </svg>
+  </button>
 </div>
 
 <p class="video-title">Uniting Human-Robot Intelligence for Complex Tasks in Unreliable Environments</p>
 
 <p class="video-description">A hybrid human-robot collaboration framework that combines human cognitive abilities with robotic precision to tackle complex manipulation tasks in uncertain, dynamic environments through adaptive learning and real-time coordination.</p>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.video-container').forEach(function(container) {
+      container.addEventListener('click', function() {
+        var videoId = this.getAttribute('data-video-id');
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
+        iframe.setAttribute('allowfullscreen', '');
+        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+        this.innerHTML = '';
+        this.appendChild(iframe);
+      });
+    });
+  });
+</script>
+
 </div>
   
     
     <div>
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/WlrFXxuyvYE" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+<div class="video-container" data-video-id="WlrFXxuyvYE">
+  <img src="https://img.youtube.com/vi/WlrFXxuyvYE/maxresdefault.jpg" alt="Be the Robot: VR Head Tracking for Robot Vision" loading="lazy" class="video-thumbnail">
+  <button class="video-play-button" aria-label="Play video">
+    <svg viewbox="0 0 68 48" width="68" height="48">
+      <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
+      <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+    </svg>
+  </button>
 </div>
 
 <p class="video-title">Be the Robot: VR Head Tracking for Robot Vision</p>
 
 <p class="video-description">An immersive teleoperation system that translates natural human head movements into robot camera control through VR head tracking, enabling intuitive remote operation and enhanced situational awareness for complex robotic tasks.</p>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.video-container').forEach(function(container) {
+      container.addEventListener('click', function() {
+        var videoId = this.getAttribute('data-video-id');
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
+        iframe.setAttribute('allowfullscreen', '');
+        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+        this.innerHTML = '';
+        this.appendChild(iframe);
+      });
+    });
+  });
+</script>
+
+</div>
+  
+</div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
+
+<h2 id="our-robot-fleet">Our Robot Fleet</h2>
+
+<p>Explore our state-of-the-art robotic systems including humanoid robots, quadruped robots, robotic arms, hexapods, and automated vehicles. These platforms enable our cutting-edge research in cyber-physical systems.</p>
+
+<div class="cols" style="--cols: 2">
+  
+    
+    <div>
+<figure class="figure">
+  <a class="figure-image" aria-label="Unitree Go2 - Quadruped Robot">
+    <img src="/images/3go2.jpg" style="
+        width: auto;
+        max-height: unset;
+      " alt="Unitree Go2 - Quadruped Robot" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      Unitree Go2 - Quadruped Robot
+
+    </figcaption>
+  
+</figure>
+
+</div>
+  
+    
+    <div>
+<figure class="figure">
+  <a class="figure-image" aria-label="Unitree B2 - Industrial Quadruped Robot with Z1 Manipulator">
+    <img src="/images/b2.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="Unitree B2 - Industrial Quadruped Robot with Z1 Manipulator" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      Unitree B2 - Industrial Quadruped Robot with Z1 Manipulator
+
+    </figcaption>
+  
+</figure>
+
+</div>
+  
+</div>
+
+<div class="cols" style="--cols: 2">
+  
+    
+    <div>
+<figure class="figure">
+  <a class="figure-image" aria-label="Franka Emika Panda - Collaborative Robotic Arm">
+    <img src="/images/franka.jpg" style="
+        width: auto;
+        max-height: unset;
+      " alt="Franka Emika Panda - Collaborative Robotic Arm" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      Franka Emika Panda - Collaborative Robotic Arm
+
+    </figcaption>
+  
+</figure>
+
+</div>
+  
+    
+    <div>
+<figure class="figure">
+  <a class="figure-image" aria-label="AgileX Bunker Pro with UR10 - Unmanned Ground Vehicle">
+    <img src="/images/bunker_pro_with_ur10.jpg" style="
+        width: auto;
+        max-height: unset;
+      " alt="AgileX Bunker Pro with UR10 - Unmanned Ground Vehicle" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      AgileX Bunker Pro with UR10 - Unmanned Ground Vehicle
+
+    </figcaption>
+  
+</figure>
+
+</div>
+  
+</div>
+
+<div class="cols" style="--cols: 2">
+  
+    
+    <div>
+<figure class="figure">
+  <a class="figure-image" aria-label="DirectDrive D1 - Bipedal Humanoid Robot Separate Configuration">
+    <img src="/images/D1_SEP.jpg" style="
+        width: auto;
+        max-height: unset;
+      " alt="DirectDrive D1 - Bipedal Humanoid Robot Separate Configuration" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      DirectDrive D1 - Bipedal Humanoid Robot (Separate Configuration)
+
+    </figcaption>
+  
+</figure>
+
+</div>
+  
+    
+    <div>
+<figure class="figure">
+  <a class="figure-image" aria-label="DirectDrive D1 - Bipedal Humanoid Robot Combined Configuration">
+    <img src="/images/D1_COMBINE.jpg" style="
+        width: auto;
+        max-height: unset;
+      " alt="DirectDrive D1 - Bipedal Humanoid Robot Combined Configuration" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      DirectDrive D1 - Bipedal Humanoid Robot (Combined Configuration)
+
+    </figcaption>
+  
+</figure>
+
 </div>
   
 </div>

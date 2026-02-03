@@ -1,19 +1,18 @@
 .background {
   position: relative;
-  background: var(--background);
-  color: var(--text);
   z-index: 1;
 }
 
-.background:before {
+.background:not(footer) {
+  background: var(--background);
+  color: var(--text);
+}
+
+.background:not(footer):before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: var(--image);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  opacity: 0.25;
+  background-image: none;
   z-index: -1;
 }
 

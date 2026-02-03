@@ -1,0 +1,216 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  animation: fadeInUp 0.6s ease-out backwards;
+}
+main p {
+  animation: fadeInUp 0.6s ease-out backwards;
+}
+main img, main figure, main .figure {
+  animation: fadeInUp 0.7s ease-out backwards;
+}
+main .card, main .feature, main .video-container {
+  animation: fadeInUp 0.7s ease-out backwards;
+}
+main section {
+  animation: fadeInUp 0.8s ease-out backwards;
+}
+main section:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+main section:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+main section:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+main section:nth-of-type(n+4) {
+  animation-delay: 0.4s;
+}
+main section h2 {
+  animation-delay: 0.15s;
+}
+main section > p, main section > ul, main section > ol {
+  animation-delay: 0.2s;
+}
+main section img, main section figure, main section .figure, main section .card, main section .feature, main section .video-container {
+  animation-delay: 0.3s;
+}
+
+body[data-loaded] header[data-big] .logo {
+  animation: float 6s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+body[data-loaded] header[data-big] .logo:hover {
+  animation-play-state: paused;
+  transform: translateY(-10px) scale(1.05);
+}
+body[data-loaded] header[data-big] .logo svg, body[data-loaded] header[data-big] .logo img {
+  filter: none;
+}
+
+body[data-loaded] header[data-big] .title-text .title {
+  animation: fadeInUp 0.8s ease-out 0.1s backwards;
+  letter-spacing: 3px;
+}
+body[data-loaded] header[data-big] .title-text .subtitle {
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+body[data-loaded] header[data-big] nav {
+  animation: fadeInUp 0.8s ease-out 0.3s backwards;
+}
+body[data-loaded] header[data-big] nav a {
+  transition: all 0.3s ease;
+}
+body[data-loaded] header[data-big] nav a:hover {
+  transform: translateY(-2px);
+}
+
+body[data-loaded] main > section:first-of-type {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+body[data-loaded] main > section:nth-of-type(2) {
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+body[data-loaded] main > section:nth-of-type(3) {
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+main {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out 0.1s forwards;
+}
+
+body[data-loaded] main > section:nth-of-type(3) {
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+body[data-loaded] main > section:nth-of-type(4) {
+  animation: fadeInUp 0.8s ease-out 0.6s backwards;
+}
+
+body[data-loaded] main > section:nth-of-type(5) {
+  animation: fadeInUp 0.8s ease-out 0.8s backwards;
+}
+
+main > section:first-of-type img {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+main > section:first-of-type img:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.15) !important;
+}
+
+.feature {
+  transition: transform 0.3s ease;
+}
+.feature:hover {
+  transform: translateY(-4px);
+}
+.feature:hover img {
+  transform: scale(1.05);
+}
+.feature img {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+.button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main > section:first-of-type h1,
+main > section:first-of-type h2 {
+  background: linear-gradient(135deg, var(--text) 0%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeIn 1s ease-out;
+}
+
+@media (min-width: 800px) {
+  .feature img {
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .feature:hover img {
+    transform: scale(1.08) translateZ(0);
+  }
+}
+body:not([data-loaded]) main {
+  opacity: 0;
+}
+
+body[data-loaded] main {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+[data-dark=true] main > section:first-of-type img:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4) !important;
+}
+[data-dark=true] .button:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=home-effects.css.map */

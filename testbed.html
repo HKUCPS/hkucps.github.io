@@ -90,7 +90,10 @@
 <!-- automatically get url from fonts used in theme file -->
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Space+Grotesk" rel="stylesheet">
+
+<!-- Michroma Font -->
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -108,6 +111,10 @@
 
   
     <link href="/_styles/-theme.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/academic-premium.css" rel="stylesheet">
   
 
   
@@ -167,6 +174,10 @@
   
 
   
+    <link href="/_styles/dynamic-background.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/feature.css" rel="stylesheet">
   
 
@@ -204,6 +215,10 @@
 
   
     <link href="/_styles/highlight.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/home-effects.css" rel="stylesheet">
   
 
   
@@ -374,6 +389,12 @@
 
   
 
+  
+
+  
+
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -393,9 +414,15 @@
 
   <script src="/_scripts/fetch-tags.js"></script>
 
+  <script src="/_scripts/home-effects.js"></script>
+
+  <script src="/_scripts/premium-interactions.js"></script>
+
   <script src="/_scripts/search.js"></script>
 
   <script src="/_scripts/site-search.js"></script>
+
+  <script src="/_scripts/starry-space.js"></script>
 
   <script src="/_scripts/table-wrap.js"></script>
 
@@ -455,12 +482,6 @@
       
         <a href="/team/" data-tooltip="About our team">
           Team
-        </a>
-      
-    
-      
-        <a href="/robots/" data-tooltip="Our robotic platforms and equipment">
-          Robots
         </a>
       
     
@@ -1675,35 +1696,7 @@ It was the spring of hope, it was the winter of despair.</p>
 <h3 id="list-team-members">List team members</h3>
 
 <div class="portrait-wrapper">
-  <a href="/members/jane-smith.html" class="portrait" data-style="" aria-label="Jane Smith">
-    
-      <i class="icon fa-solid fa-microscope"></i>
-    
-
-    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Jane Smith
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Principal Investigator
-      </span>
-    
-
-    
-      <span class="portrait-affiliation">
-        University of Colorado
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/john-doe.html" class="portrait" data-style="" aria-label="John Doe">
+  <a href="/members/li-ji.html" class="portrait" data-style="" aria-label="Ji Li">
     
       <i class="icon fa-solid fa-graduation-cap"></i>
     
@@ -1712,7 +1705,7 @@ It was the spring of hope, it was the winter of despair.</p>
 
     
       <span class="portrait-name">
-        John Doe
+        Ji Li
       </span>
     
 
@@ -1727,22 +1720,142 @@ It was the spring of hope, it was the winter of despair.</p>
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/members/sarah-johnson.html" class="portrait" data-style="" aria-label="Sarah Johnson">
+  <a href="/members/li-mingjun.html" class="portrait" data-style="" aria-label="Mingjun Li">
     
-      <i class="icon fa-solid fa-code"></i>
+      <i class="icon fa-solid fa-graduation-cap"></i>
     
 
     <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
-        Sarah Johnson
+        Mingjun Li
       </span>
     
 
     
       <span class="portrait-description">
-        Lead Programmer
+        PhD Student
+      </span>
+    
+
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/members/liang-zhengji.html" class="portrait" data-style="" aria-label="Zhengji Liang">
+    
+      <i class="icon fa-solid fa-graduation-cap"></i>
+    
+
+    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Zhengji Liang
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        PhD Student
+      </span>
+    
+
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/members/liao-yi-fan.html" class="portrait" data-style="" aria-label="Yifan Liao">
+    
+      <i class="icon fa-solid fa-graduation-cap"></i>
+    
+
+    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Yifan Liao
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        PhD Student
+      </span>
+    
+
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/members/liuhai-nan.html" class="portrait" data-style="" aria-label="Hainan Liu">
+    
+      <i class="icon fa-solid fa-graduation-cap"></i>
+    
+
+    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Hainan Liu
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        PhD Student
+      </span>
+    
+
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/members/sy-hu.html" class="portrait" data-style="" aria-label="Professor S.Y. Hu">
+    
+      <i class="icon fa-solid fa-microscope"></i>
+    
+
+    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Professor S.Y. Hu
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Principal Investigator
+      </span>
+    
+
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/members/xia-jing.html" class="portrait" data-style="" aria-label="Jing Xia">
+    
+      <i class="icon fa-solid fa-graduation-cap"></i>
+    
+
+    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+
+    
+      <span class="portrait-name">
+        Jing Xia
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        PhD Student
       </span>
     
 
@@ -1777,34 +1890,10 @@ It was the spring of hope, it was the winter of despair.</p>
     
       
       
-        
-
-
-
-<div class="portrait-wrapper">
-  <a href="/members/john-doe.html" class="portrait" data-style="tiny" aria-label="John Doe">
-    
-      <i class="icon fa-solid fa-graduation-cap"></i>
-    
-
-    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        John Doe
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        PhD Student
-      </span>
-    
-
-    
-  </a>
-</div>
-
+        <span data-tooltip="Author">
+          <i class="icon fa-solid fa-feather-pointed"></i>
+          <span>john-doe</span>
+        </span>
       
     
   
@@ -1822,7 +1911,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 02, 2026</span>
+      <span>February 03, 2026</span>
     </span>
   
 </div>
@@ -1876,38 +1965,10 @@ It was the spring of hope, it was the winter of despair.</p>
     
       
       
-        
-
-
-
-<div class="portrait-wrapper">
-  <a href="/members/jane-smith.html" class="portrait" data-style="tiny" aria-label="Jane Smith">
-    
-      <i class="icon fa-solid fa-microscope"></i>
-    
-
-    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Jane Smith
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Principal Investigator
-      </span>
-    
-
-    
-      <span class="portrait-affiliation">
-        University of Colorado
-      </span>
-    
-  </a>
-</div>
-
+        <span data-tooltip="Author">
+          <i class="icon fa-solid fa-feather-pointed"></i>
+          <span>jane-smith</span>
+        </span>
       
     
   
@@ -1925,7 +1986,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 02, 2026</span>
+      <span>February 03, 2026</span>
     </span>
   
 </div>
@@ -1967,34 +2028,10 @@ It was the spring of hope, it was the winter of despair.</p>
     
       
       
-        
-
-
-
-<div class="portrait-wrapper">
-  <a href="/members/sarah-johnson.html" class="portrait" data-style="tiny" aria-label="Sarah Johnson">
-    
-      <i class="icon fa-solid fa-code"></i>
-    
-
-    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Sarah Johnson
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Lead Programmer
-      </span>
-    
-
-    
-  </a>
-</div>
-
+        <span data-tooltip="Author">
+          <i class="icon fa-solid fa-feather-pointed"></i>
+          <span>sarah-johnson</span>
+        </span>
       
     
   
@@ -2012,7 +2049,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 02, 2026</span>
+      <span>February 03, 2026</span>
     </span>
   
 </div>
@@ -2345,51 +2382,27 @@ It was the spring of hope, it was the winter of despair.</p>
 <h2 id="portrait">Portrait</h2>
 
 <div class="portrait-wrapper">
-  <a href="/members/jane-smith.html" class="portrait" data-style="" aria-label="Jane Smith">
-    
-      <i class="icon fa-solid fa-microscope"></i>
+  <a class="portrait" data-style="" aria-label="member link">
     
 
-    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
-    
-      <span class="portrait-name">
-        Jane Smith
-      </span>
     
 
     
-      <span class="portrait-description">
-        Principal Investigator
-      </span>
-    
 
-    
-      <span class="portrait-affiliation">
-        University of Colorado
-      </span>
     
   </a>
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/members/john-doe.html" class="portrait" data-style="small" aria-label="John Doe">
-    
-      <i class="icon fa-solid fa-graduation-cap"></i>
+  <a class="portrait" data-style="small" aria-label="member link">
     
 
-    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
-      <span class="portrait-name">
-        John Doe
-      </span>
-    
 
-    
-      <span class="portrait-description">
-        PhD Student
-      </span>
     
 
     
@@ -2459,34 +2472,10 @@ It was the spring of hope, it was the winter of despair.</p>
     
       
       
-        
-
-
-
-<div class="portrait-wrapper">
-  <a href="/members/sarah-johnson.html" class="portrait" data-style="tiny" aria-label="Sarah Johnson">
-    
-      <i class="icon fa-solid fa-code"></i>
-    
-
-    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Sarah Johnson
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Lead Programmer
-      </span>
-    
-
-    
-  </a>
-</div>
-
+        <span data-tooltip="Author">
+          <i class="icon fa-solid fa-feather-pointed"></i>
+          <span>sarah-johnson</span>
+        </span>
       
     
   
@@ -2504,7 +2493,7 @@ It was the spring of hope, it was the winter of despair.</p>
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 02, 2026</span>
+      <span>February 03, 2026</span>
     </span>
   
 </div>
@@ -3451,34 +3440,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     
       
       
-        
-
-
-
-<div class="portrait-wrapper">
-  <a href="/members/john-doe.html" class="portrait" data-style="tiny" aria-label="John Doe">
-    
-      <i class="icon fa-solid fa-graduation-cap"></i>
-    
-
-    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        John Doe
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        PhD Student
-      </span>
-    
-
-    
-  </a>
-</div>
-
+        <span data-tooltip="Author">
+          <i class="icon fa-solid fa-feather-pointed"></i>
+          <span>john-doe</span>
+        </span>
       
     
   
@@ -3496,7 +3461,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 02, 2026</span>
+      <span>February 03, 2026</span>
     </span>
   
 </div>
@@ -3550,38 +3515,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     
       
       
-        
-
-
-
-<div class="portrait-wrapper">
-  <a href="/members/jane-smith.html" class="portrait" data-style="tiny" aria-label="Jane Smith">
-    
-      <i class="icon fa-solid fa-microscope"></i>
-    
-
-    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Jane Smith
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Principal Investigator
-      </span>
-    
-
-    
-      <span class="portrait-affiliation">
-        University of Colorado
-      </span>
-    
-  </a>
-</div>
-
+        <span data-tooltip="Author">
+          <i class="icon fa-solid fa-feather-pointed"></i>
+          <span>jane-smith</span>
+        </span>
       
     
   
@@ -3599,7 +3536,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 02, 2026</span>
+      <span>February 03, 2026</span>
     </span>
   
 </div>
@@ -3641,34 +3578,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     
       
       
-        
-
-
-
-<div class="portrait-wrapper">
-  <a href="/members/sarah-johnson.html" class="portrait" data-style="tiny" aria-label="Sarah Johnson">
-    
-      <i class="icon fa-solid fa-code"></i>
-    
-
-    <img src="/images/photo.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Sarah Johnson
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Lead Programmer
-      </span>
-    
-
-    
-  </a>
-</div>
-
+        <span data-tooltip="Author">
+          <i class="icon fa-solid fa-feather-pointed"></i>
+          <span>sarah-johnson</span>
+        </span>
       
     
   
@@ -3686,7 +3599,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>February 02, 2026</span>
+      <span>February 03, 2026</span>
     </span>
   
 </div>

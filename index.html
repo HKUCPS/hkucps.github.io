@@ -90,7 +90,10 @@
 <!-- automatically get url from fonts used in theme file -->
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Space+Grotesk" rel="stylesheet">
+
+<!-- Michroma Font -->
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -108,6 +111,10 @@
 
   
     <link href="/_styles/-theme.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/academic-premium.css" rel="stylesheet">
   
 
   
@@ -167,6 +174,10 @@
   
 
   
+    <link href="/_styles/dynamic-background.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/feature.css" rel="stylesheet">
   
 
@@ -204,6 +215,10 @@
 
   
     <link href="/_styles/highlight.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/home-effects.css" rel="stylesheet">
   
 
   
@@ -344,6 +359,12 @@
 
   
 
+  
+
+  
+
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -363,9 +384,15 @@
 
   <script src="/_scripts/fetch-tags.js"></script>
 
+  <script src="/_scripts/home-effects.js"></script>
+
+  <script src="/_scripts/premium-interactions.js"></script>
+
   <script src="/_scripts/search.js"></script>
 
   <script src="/_scripts/site-search.js"></script>
+
+  <script src="/_scripts/starry-space.js"></script>
 
   <script src="/_scripts/table-wrap.js"></script>
 
@@ -385,12 +412,6 @@
 
 <header class="background" style="--image: url('/images/background_cps.jpeg')" data-dark="true" data-big>
   <a href="/" class="home">
-    
-      <span class="logo">
-        
-          <img src="/images/logo/CPS_logo.png" alt="logo">
-        
-      </span>
     
     
       <span class="title-text" data-tooltip="Home">
@@ -428,12 +449,6 @@
       
     
       
-        <a href="/robots/" data-tooltip="Our robotic platforms and equipment">
-          Robots
-        </a>
-      
-    
-      
         <a href="/contact/" data-tooltip="Email, address, and location">
           Contact
         </a>
@@ -460,12 +475,20 @@
   
 
   <section class="background" data-size="page">
-    <p>Welcome to JC STEM Lab of Smart Cyber-Physical Industrial Systems at The University of Hong Kong! Our research explores deep integration and interaction between cyber systems and physical systems to tackle practical challenges, leveraging the state-of-the-art robotic systems such as humanoid, quadruped robots, robotic arms, hexapods, and automated vehicles. Highly motivated students interested in our research are encouraged to contact us. See our <a href="/projects/">projects</a> and <a href="/research/">research</a> for more details. Please visit our <a href="/contact/">contact</a> page to get in touch.</p>
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
 
-<div style="text-align: center; margin: 2em 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-  <img src="images/lab_license.jpg" alt="Lab License" style="width: 400px; max-width: 45%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <img src="images/lab_license2.jpg" alt="Lab License 2" style="width: 400px; max-width: 45%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-</div>
+<h3 id="about-our-lab">About Our Lab</h3>
+<!-- {: style="text-align: center;"} -->
+
+<p>Welcome to JC STEM Lab of Smart Cyber-Physical Industrial Systems at The University of Hong Kong! Our research explores deep integration and interaction between cyber systems and physical systems to tackle practical challenges, leveraging the state-of-the-art robotic systems such as humanoid, quadruped robots, robotic arms, hexapods, and automated vehicles. Highly motivated students interested in our research are encouraged to contact us. See our projects and research for more details. Please visit our contact page to get in touch.</p>
+
+<p>Our research spans three core areas: <strong>Cyber-Physical Systems</strong> for intelligent integration of computation and physical processes, <strong>Robotics</strong> for autonomous manipulation and navigation, and <strong>Data Analytics</strong> for extracting insights and enabling data-driven decision making.</p>
+
+<p>Highly motivated students interested in our research are encouraged to contact us. See our <a href="/projects/">projects</a> and <a href="/research/">research</a> for more details.</p>
   </section>
 
   
@@ -478,80 +501,6 @@
   <dark></dark>
   <size></size>
 -->
-
-<h2 id="highlights">Highlights</h2>
-
-<div class="feature">
-  <a href="/research" class="feature-image" aria-label="Our Research">
-    <img src="/images/research_logo.jpg" loading="lazy" alt="Our Research" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">Our Research</p>
-    
-    
-<p>Our research focuses on cyber-physical systems and robotics. We work on cutting-edge technologies to bridge the gap between digital computation and physical processes.</p>
-
-<div class="button-wrapper">
-    <a class="button" href="/research" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
-      <i class="icon fa-solid fa-arrow-right"></i>
-      
-        <span>See our research areas</span>
-      
-    </a>
-  </div>
-
-
-  </div>
-</div>
-
-<div class="feature" data-flip="">
-  <a href="/projects" class="feature-image" aria-label="Our Projects">
-    <img src="/images/3go2.jpg" loading="lazy" alt="Our Projects" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">Our Projects</p>
-    
-    
-<p>We develop innovative solutions in robotics and automation. Our projects leverage advanced robotic platforms to solve real-world challenges in industrial environments.</p>
-
-<div class="button-wrapper">
-    <a class="button" href="/projects" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
-      <i class="icon fa-solid fa-arrow-right"></i>
-      
-        <span>Browse our projects</span>
-      
-    </a>
-  </div>
-
-
-  </div>
-</div>
-
-<div class="feature">
-  <a href="/team" class="feature-image" aria-label="Our Team">
-    <img src="/images/team_temporary.png" loading="lazy" alt="Our Team" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">Our Team</p>
-    
-    
-<p>Our lab brings together talented researchers and students passionate about robotics and cyber-physical systems. Join us to explore the future of intelligent systems.</p>
-
-<div class="button-wrapper">
-    <a class="button" href="/team" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
-      <i class="icon fa-solid fa-arrow-right"></i>
-      
-        <span>Meet our team</span>
-      
-    </a>
-  </div>
-
-
-  </div>
-</div>
   </section>
 
 

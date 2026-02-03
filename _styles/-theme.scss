@@ -1,33 +1,39 @@
 ---
 ---
 
-// colors
+// colors - Premium Academic Theme
 [data-dark="false"] {
-  --primary: #0795d9;
-  --secondary: #7dd3fc;
-  --text: #000000;
-  --background: #ffffff;
-  --background-alt: #fafafa;
-  --light-gray: #e0e0e0;
-  --gray: #808080;
-  --dark-gray: #404040;
-  --overlay: #00000020;
+  --primary: #2a8f7a;
+  --secondary: #6fc2ad;
+  --text: #123338;
+  --background: #f7fbfa;
+  --background-alt: #eef6f3;
+  --light-gray: #dceae5;
+  --gray: #5f7d75;
+  --dark-gray: #25434a;
+  --overlay: #00000012;
+  --accent: #3aa892;
+  --gradient-start: #1f6f62;
+  --gradient-end: #4fb4a0;
 }
 [data-dark="true"] {
-  --primary: #0795d9;
-  --secondary: #075985;
-  --text: #ffffff;
-  --background: #181818;
-  --background-alt: #1c1c1c;
-  --light-gray: #404040;
-  --gray: #808080;
-  --dark-gray: #b0b0b0;
-  --overlay: #ffffff10;
+  --primary: #7fdac3;
+  --secondary: #3fbf9f;
+  --text: #e9f5f1;
+  --background: #0b1416;
+  --background-alt: #101f22;
+  --light-gray: #1a2b2f;
+  --gray: #6b8a83;
+  --dark-gray: #b7d2ca;
+  --overlay: #ffffff08;
+  --accent: #66d1b8;
+  --gradient-start: #0f3b34;
+  --gradient-end: #1a6b5a;
 }
 
 :root {
   // font families
-  --title: "Barlow", sans-serif;
+  --title: "Space Grotesk", "Barlow", sans-serif;
   --heading: "Barlow", sans-serif;
   --body: "Barlow", sans-serif;
   --code: "Roboto Mono", monospace;

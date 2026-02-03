@@ -7,45 +7,61 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 40px 0 20px 0;
-  font-family: var(--heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #000000;
   font-weight: var(--semi-bold);
+
+main h3 {
+  color: #000000 !important;
+}
   text-align: left;
   letter-spacing: 1px;
 }
 
 h1 {
   margin: 40px 0;
-  font-size: 1.6rem;
-  font-weight: var(--regular);
+  font-size: 2rem;
+  font-weight: 300;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 h2 {
   font-size: 1.6rem;
-  padding-bottom: 5px;
-  border-bottom: solid 1px var(--light-gray);
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--primary);
   font-weight: var(--regular);
+  color: var(--text);
 }
 
 h3 {
   font-size: 1.5rem;
+  color: var(--primary);
 }
 
 h4 {
   font-size: 1.3rem;
+  color: var(--text);
 }
 
 h5 {
   font-size: 1.15rem;
+  color: var(--text);
 }
 
 h6 {
   font-size: 1rem;
+  color: var(--text);
 }
 
 :where(h1, h2, h3, h4, h5, h6) > .icon {
-  margin-right: 1em;
-  color: var(--light-gray);
+  margin-right: 0.8em;
+  color: var(--primary);
+  font-size: 1.2em;
 }

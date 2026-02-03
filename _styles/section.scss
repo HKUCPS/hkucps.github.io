@@ -6,7 +6,8 @@ $padding: 40px;
 
 section {
   padding: $padding max($padding, calc((100% - $page) / 2));
-  transition: background var(--transition), color var(--transition);
+  transition: background 0.3s ease, color 0.3s ease;
+  position: relative;
 }
 
 section[data-size="wide"] {
@@ -31,9 +32,18 @@ main > section:last-of-type {
 }
 
 main > section:nth-of-type(odd) {
-  background: var(--background);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 26, 31, 0.02) 0%,
+    rgba(26, 58, 71, 0.04) 100%
+  );
+  position: relative;
 }
 
 main > section:nth-of-type(even) {
-  background: var(--background-alt);
+  background: linear-gradient(
+    180deg,
+    rgba(26, 58, 71, 0.04) 0%,
+    rgba(13, 90, 74, 0.05) 100%
+  );
 }

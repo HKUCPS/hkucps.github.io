@@ -1,8 +1,5 @@
 ---
 title: Robots
-nav:
-  order: 4
-  tooltip: Our robotic platforms and equipment
 ---
 
 # {% include icon.html icon="fa-solid fa-robot" %}Robots

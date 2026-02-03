@@ -3,12 +3,30 @@
 
 a {
   color: var(--primary);
-  transition: color var(--transition);
+  transition: all 0.3s ease;
   overflow-wrap: break-word;
-}
+  position: relative;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
 
-a:hover {
-  color: var(--text);
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transition: width 0.3s ease;
+  }
+
+  &:hover {
+    color: var(--secondary);
+
+    &::after {
+      width: 100%;
+    }
+  }
 }
 
 a:not([href]) {

@@ -17,7 +17,7 @@
   {% endif %}
 >
   <a href="{{ "/" | relative_url }}" class="home">
-    {% if logo %}
+    {% if logo and page.url != "/" %}
       <span class="logo">
         {% if svg %}
           {{ svg | file_read }}

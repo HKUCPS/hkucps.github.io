@@ -1,4 +1,5 @@
 ---
+header-dark: true
 ---
 
 {% include section.html %}
@@ -6,16 +7,9 @@
 ### About Our Lab
 <!-- {: style="text-align: center;"} -->
 
-Welcome to the JC STEM Lab of Smart Cyber-Physical Industrial Systems. We explore the deep integration and interaction between cyber systems and physical systems to tackle practical industrial challenges. Our laboratory combines cutting-edge robotics, artificial intelligence, and advanced control systems to develop intelligent solutions for real-world industrial applications. We specialize in creating autonomous systems that can adapt to dynamic and uncertain environments, with a focus on practical deployment and engineering excellence.
+Welcome to JC STEM Lab of Smart Cyber-Physical Industrial Systems at The University of Hong Kong! Our research explores deep integration and interaction between cyber systems and physical systems to tackle practical challenges, leveraging the state-of-the-art robotic systems such as humanoid, quadruped robots, robotic arms, hexapods, and automated vehicles. Highly motivated students interested in our research are encouraged to contact us. See our projects and research for more details. Please visit our contact page to get in touch.
 
 Our research spans three core areas: **Cyber-Physical Systems** for intelligent integration of computation and physical processes, **Robotics** for autonomous manipulation and navigation, and **Data Analytics** for extracting insights and enabling data-driven decision making.
-
-We leverage state-of-the-art robotic platforms including:
-- Humanoid robots
-- Quadruped robots
-- Robotic arms
-- Hexapods
-- Automated vehicles
 
 Highly motivated students interested in our research are encouraged to contact us. See our [projects](/projects/) and [research](/research/) for more details.
 
@@ -36,7 +30,7 @@ Highly motivated students interested in our research are encouraged to contact u
 
 {% endcomment %}
 
-
+{% comment %}
 ## Highlights
 
 {%
@@ -65,3 +59,5 @@ Highly motivated students interested in our research are encouraged to contact u
 %}
 
 {% include section.html %}
+
+{% endcomment %}

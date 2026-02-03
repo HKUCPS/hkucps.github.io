@@ -11,7 +11,11 @@
 
 <div class="portrait-wrapper">
   <a
-    {% if page.slug != member.slug %}
+    {% if member.links.home-page %}
+      href="{{ member.links.home-page }}"
+      target="_blank"
+      rel="noopener noreferrer"
+    {% elsif page.slug != member.slug %}
       href="{{ member.url | relative_url | uri_escape }}"
     {% endif %}
     class="portrait"

@@ -2,7 +2,7 @@
 ---
 
 // ===========================
-// Home Page Animations & Effects
+// Global Animations & Effects
 // ===========================
 
 // Fade-in animation for main content
@@ -36,25 +36,108 @@
   }
 }
 
-// Float animation for logo
+// Float animation for logo - clean style
 @keyframes float {
   0%, 100% {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
   }
 }
 
-// Logo floating effect on home page
+// ===========================
+// Global Page Content Animations
+// ===========================
+
+// Apply fadeInUp to all main content elements
+main {
+  h1, h2, h3, h4, h5, h6 {
+    animation: fadeInUp 0.6s ease-out backwards;
+  }
+
+  p {
+    animation: fadeInUp 0.6s ease-out backwards;
+  }
+
+  img, figure, .figure {
+    animation: fadeInUp 0.7s ease-out backwards;
+  }
+
+  .card, .feature, .video-container {
+    animation: fadeInUp 0.7s ease-out backwards;
+  }
+
+  section {
+    animation: fadeInUp 0.8s ease-out backwards;
+
+    &:nth-of-type(1) {
+      animation-delay: 0.1s;
+    }
+
+    &:nth-of-type(2) {
+      animation-delay: 0.2s;
+    }
+
+    &:nth-of-type(3) {
+      animation-delay: 0.3s;
+    }
+
+    &:nth-of-type(n+4) {
+      animation-delay: 0.4s;
+    }
+
+    h2 {
+      animation-delay: 0.15s;
+    }
+
+    > p, > ul, > ol {
+      animation-delay: 0.2s;
+    }
+
+    img, figure, .figure, .card, .feature, .video-container {
+      animation-delay: 0.3s;
+    }
+  }
+}
+
+// Logo floating effect on home page - Clean version
 body[data-loaded] header[data-big] .logo {
-  animation: float 3s ease-in-out infinite;
-  transition: transform 0.3s ease;
+  animation: float 6s ease-in-out infinite;
+  transition: all 0.3s ease;
   
   &:hover {
     animation-play-state: paused;
-    transform: translateY(-5px) scale(1.05);
+    transform: translateY(-10px) scale(1.05);
+  }
+
+  svg, img {
     filter: none;
+  }
+}
+
+// Enhanced home page typography animations
+body[data-loaded] header[data-big] .title-text {
+  .title {
+    animation: fadeInUp 0.8s ease-out 0.1s backwards;
+    letter-spacing: 3px;
+  }
+
+  .subtitle {
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+  }
+}
+
+// Navigation animation
+body[data-loaded] header[data-big] nav {
+  animation: fadeInUp 0.8s ease-out 0.3s backwards;
+
+  a {
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
   }
 }
 
@@ -66,6 +149,16 @@ body[data-loaded] main > section:first-of-type {
 // Staggered animation for subsequent sections
 body[data-loaded] main > section:nth-of-type(2) {
   animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+body[data-loaded] main > section:nth-of-type(3) {
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+// Smooth content reveal
+main {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out 0.1s forwards;
 }
 
 body[data-loaded] main > section:nth-of-type(3) {
